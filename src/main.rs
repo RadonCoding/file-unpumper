@@ -1,4 +1,4 @@
-use std::{env, fs, path::Path};
+use std::{cmp, env, fs, path::Path};
 use goblin::Object;
 
 fn main() {
@@ -30,7 +30,7 @@ fn main() {
             }
         }
         // get the minimum value of both size_of_image and eof_offset
-        let eof_offset = std::cmp::min(size_of_image, eof_offset);
+        let eof_offset = cmp::min(size_of_image, eof_offset);
 
         // Create a new slice of the buffer that contains only the bytes up to eof_offset
         let trimmed = &buffer[..eof_offset];
