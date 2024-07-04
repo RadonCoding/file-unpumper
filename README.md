@@ -40,9 +40,9 @@ cargo install file-unpumper
 
 1. Clean a PE file and remove any "pumped" data:
 
-   ```bash
-   file-unpumper path/to/input.exe
-   ```
+  ```bash
+  file-unpumper path/to/input.exe
+  ```
 
 1. Fix the PE headers and analyze the metadata of a file:
 
