@@ -44,19 +44,19 @@ cargo install file-unpumper
   file-unpumper path/to/input.exe
   ```
 
-1. Fix the PE headers and analyze the metadata of a file:
+2. Fix the PE headers and analyze the metadata of a file:
 
   ```bash
   file-unpumper --fix-headers --analyze-metadata path/to/input.exe
   ```
 
-1. Extract resources from a PE file:
+3. Extract resources from a PE file:
 
   ```bash
   file-unpumper --extract-resources path/to/input.exe
   ```
 
-1. Perform all available operations on a file:
+4. Perform all available operations on a file:
 
   ```bash
   file-unpumper --fix-headers --extract-resources --analyze-metadata path/to/input.exe
